@@ -1,7 +1,9 @@
-package com.example.rodri.usingrecyclerview;
+package com.example.rodri.usingrecyclerview.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.rodri.usingrecyclerview.R;
 
 public class MainActivity extends AppCompatActivity {
 
