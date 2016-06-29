@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import com.example.rodri.usingrecyclerview.DividerItemDecoration;
 import com.example.rodri.usingrecyclerview.R;
 import com.example.rodri.usingrecyclerview.adapter.MoviesAdapter;
 import com.example.rodri.usingrecyclerview.model.Movie;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
+        //add after create the DividerItemDecoration class
+        recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
         recyclerView.setAdapter(moviesAdapter);
 
         prepareMovieData();
